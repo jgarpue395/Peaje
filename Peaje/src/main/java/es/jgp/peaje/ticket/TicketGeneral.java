@@ -1,10 +1,11 @@
 package es.jgp.peaje.ticket;
 
 import es.jgp.peaje.utils.Constantes;
+import es.jgp.peaje.utils.PeajeException;
 
 public class TicketGeneral extends Ticket
 {
-	public TicketGeneral(float kmEntrada) 
+	public TicketGeneral(float kmEntrada) throws PeajeException 
 	{
 		super(kmEntrada);
 	}

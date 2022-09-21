@@ -1,12 +1,13 @@
 package es.jgp.peaje.ticket;
 
 import es.jgp.peaje.utils.Constantes;
+import es.jgp.peaje.utils.PeajeException;
 
 public class TicketEspecial extends Ticket
 {
 	private int pasajeros;
 	
-	public TicketEspecial(float kmEntrada, int pasajeros) 
+	public TicketEspecial(float kmEntrada, int pasajeros) throws PeajeException 
 	{
 		super(kmEntrada);
 		this.pasajeros = pasajeros;
