@@ -1,8 +1,8 @@
 package es.jgp.peaje.ticket;
 
+import es.jgp.peaje.utils.PeajeException;
+
 public interface ITicket 
 {
-	public abstract float calcularDescuento(double kmSalida);
-	
-	public abstract float calcularPrecio();
+	public void calcularKmRecorridos(float kmSalida) throws PeajeException;
 }

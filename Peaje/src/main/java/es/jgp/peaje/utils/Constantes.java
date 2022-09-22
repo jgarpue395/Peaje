@@ -1,6 +1,6 @@
 package es.jgp.peaje.utils;
 
-public class Constantes 
+public final class Constantes 
 {
 	public static final float PRECIO_POR_KM = 1.50f;
 	//n km a recorrer para aplicar DESCUENTO_GENERAL

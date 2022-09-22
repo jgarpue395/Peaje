@@ -10,7 +10,8 @@ public class TicketGeneral extends Ticket
 		super(kmEntrada);
 	}
 	
-	public final float calcularDescuento(double kmRecorridos) 
+	@Override
+	protected final float calcularDescuento(double kmRecorridos) 
 	{
 		float descuento = 0;
 		
@@ -23,7 +24,8 @@ public class TicketGeneral extends Ticket
 		return descuento;
 	}
 	
-	public final float calcularPrecio() 
+	@Override
+	protected final float calcularPrecio() 
 	{
 		float precio = (super.kmRecorridos * Constantes.PRECIO_POR_KM);
 		

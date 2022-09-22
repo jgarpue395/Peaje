@@ -4,7 +4,7 @@ import es.jgp.peaje.utils.PeajeException;
 
 public abstract class Ticket implements ITicket
 {
-	protected float kmEntrada;
+	protected final float kmEntrada;
 	
 	protected float kmSalida;
 	
@@ -31,4 +31,8 @@ public abstract class Ticket implements ITicket
 		
 		this.kmRecorridos = Math.abs(this.kmSalida - this.kmEntrada);
 	}
+	
+	protected abstract float calcularDescuento(double kmSalida);
+	
+	protected abstract float calcularPrecio();
 }
